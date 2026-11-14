@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>A Mi Gusto – Alho 100% Natural, Triturado & Fresco</title>
+    <meta name="description" content="Aplicativo PWA para assinaturas e pedidos de alho triturado 100% natural com área do cliente, programa Indique e Ganhe e painel administrativo." />
+    <meta property="og:title" content="A Mi Gusto – Alho 100% Natural, Triturado & Fresco" />
+    <meta property="og:description" content="Aplicativo PWA para assinaturas e pedidos de alho triturado 100% natural com área do cliente, programa Indique e Ganhe e painel administrativo." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#255232" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="A Mi Gusto" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>
+      // Suppress Vite client WebSocket HMR disconnection notices in sandbox preview
+      window.addEventListener('unhandledrejection', function(event) {
+        if (event.reason && String(event.reason).includes('WebSocket closed without opened')) {
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        if (event.message && (event.message.includes('WebSocket') || event.message.includes('@vite/client'))) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-stone-50 text-stone-900 antialiased font-sans selection:bg-emerald-900 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,8 @@
+{
+  "name": "A Mi Gusto - Alho 100% Natural & Gestão de Clientes",
+  "description": "Aplicativo para assinaturas e pedidos de alho triturado 100% natural com área do cliente, programa Indique e Ganhe e painel administrativo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
